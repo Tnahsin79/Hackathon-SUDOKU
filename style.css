@@ -14,21 +14,27 @@
 }
 table{
     text-align: center;
-    width: 100%;
+    /*width: 100%;*/
     background-color: aliceblue;
     font-weight: bold;
     font-size: 50px;
+    margin-left: 500px;
 }
 td{
-    font-size: 50px;
     border: 2px solid black;
-    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+    /*width: 48px;*/
 }
 input{
-    font-size: 30px;
+    font-size: 24px;
     text-align: center;
-    width: 50px;
+    width: 48px;
+    height: 48px;
     border: 2px solid black;
+    padding: 0;
+    border: 0;
+    outline: none;
 }
 button{
     height: 40px;
