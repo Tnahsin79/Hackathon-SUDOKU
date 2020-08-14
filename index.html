@@ -1,0 +1,474 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="style.css">
+    <title>Pagination</title>
+</head>
+<body>
+    
+    <script>
+
+        var div1=document.createElement("div");
+        div1.setAttribute("class","container div1");
+        div1.setAttribute("id","div1");
+
+        var h1=document.createElement("h1");
+        h1.setAttribute("class","display-1");
+        h1.innerText="SUDOKU";
+
+        var div2=document.createElement("div");
+        div2.setAttribute("class","container div2");
+        div2.setAttribute("id","div2");
+
+        var h3=document.createElement("h3");
+        h3.setAttribute("id","timer");
+
+        create();
+        function create(){
+        var table=document.createElement("table");
+        var tbody=document.createElement("tbody");
+
+        var tr1=document.createElement("tr");
+        var td11=document.createElement("td");
+        var ip11=document.createElement("input");ip11.setAttribute("type","text");ip11.setAttribute("id","c11");ip11.setAttribute("value","5");ip11.setAttribute("disabled","on");
+        var td12=document.createElement("td");
+        var ip12=document.createElement("input");ip12.setAttribute("type","text");ip12.setAttribute("id","c12");ip12.setAttribute("value","3");ip12.setAttribute("disabled","on");
+        var td13=document.createElement("td");
+        var ip13=document.createElement("input");ip13.setAttribute("type","number");ip13.setAttribute("id","c13");ip13.setAttribute("min","1");ip13.setAttribute("max","9");
+        var td14=document.createElement("td");
+        var ip14=document.createElement("input");ip14.setAttribute("type","number");ip14.setAttribute("id","c14");ip14.setAttribute("min","1");ip14.setAttribute("max","9");
+        var td15=document.createElement("td");
+        var ip15=document.createElement("input");ip15.setAttribute("type","text");ip15.setAttribute("id","c15");ip15.setAttribute("value","3");ip15.setAttribute("disabled","on");
+        var td16=document.createElement("td");
+        var ip16=document.createElement("input");ip16.setAttribute("type","number");ip16.setAttribute("id","c16");ip16.setAttribute("min","1");ip16.setAttribute("max","9");
+        var td17=document.createElement("td");
+        var ip17=document.createElement("input");ip17.setAttribute("type","number");ip17.setAttribute("id","c17");ip17.setAttribute("min","1");ip17.setAttribute("max","9");
+        var td18=document.createElement("td");
+        var ip18=document.createElement("input");ip18.setAttribute("type","number");ip18.setAttribute("id","c18");ip18.setAttribute("min","1");ip18.setAttribute("max","9");
+        var td19=document.createElement("td");
+        var ip19=document.createElement("input");ip19.setAttribute("type","number");ip19.setAttribute("id","c19");ip19.setAttribute("min","1");ip19.setAttribute("max","9");
+
+        var tr2=document.createElement("tr");
+        var td21=document.createElement("td");
+        var ip21=document.createElement("input");ip21.setAttribute("type","text");ip21.setAttribute("id","c21");ip21.setAttribute("value","6");ip21.setAttribute("disabled","on");
+        var td22=document.createElement("td");
+        var ip22=document.createElement("input");ip22.setAttribute("type","text");ip22.setAttribute("id","c22");ip22.setAttribute("min","1");ip22.setAttribute("max","9");
+        var td23=document.createElement("td");
+        var ip23=document.createElement("input");ip23.setAttribute("type","number");ip23.setAttribute("id","c23");ip23.setAttribute("min","1");ip23.setAttribute("max","9");
+        var td24=document.createElement("td");
+        var ip24=document.createElement("input");ip24.setAttribute("type","number");ip24.setAttribute("id","c24");ip24.setAttribute("value","1");ip24.setAttribute("disabled","on");
+        var td25=document.createElement("td");
+        var ip25=document.createElement("input");ip25.setAttribute("type","text");ip25.setAttribute("id","c25");ip25.setAttribute("value","9");ip25.setAttribute("disabled","on");
+        var td26=document.createElement("td");
+        var ip26=document.createElement("input");ip26.setAttribute("type","number");ip26.setAttribute("id","c26");ip26.setAttribute("value","5");ip26.setAttribute("disabled","on");
+        var td27=document.createElement("td");
+        var ip27=document.createElement("input");ip27.setAttribute("type","number");ip27.setAttribute("id","c27");ip27.setAttribute("min","1");ip27.setAttribute("max","9");
+        var td28=document.createElement("td");
+        var ip28=document.createElement("input");ip28.setAttribute("type","number");ip28.setAttribute("id","c28");ip28.setAttribute("min","1");ip28.setAttribute("max","9");
+        var td29=document.createElement("td");
+        var ip29=document.createElement("input");ip29.setAttribute("type","number");ip29.setAttribute("id","c29");ip29.setAttribute("min","1");ip29.setAttribute("max","9");
+
+        var tr3=document.createElement("tr");
+        var td31=document.createElement("td");
+        var ip31=document.createElement("input");ip31.setAttribute("type","text");ip31.setAttribute("id","c31");ip31.setAttribute("min","1");ip31.setAttribute("max","9");
+        var td32=document.createElement("td");
+        var ip32=document.createElement("input");ip32.setAttribute("type","text");ip32.setAttribute("id","c32");ip32.setAttribute("value","9");ip11.setAttribute("disabled","on");
+        var td33=document.createElement("td");
+        var ip33=document.createElement("input");ip33.setAttribute("type","number");ip33.setAttribute("id","c33");ip33.setAttribute("value","8");ip11.setAttribute("disabled","on");
+        var td34=document.createElement("td");
+        var ip34=document.createElement("input");ip34.setAttribute("type","number");ip34.setAttribute("id","c34");ip34.setAttribute("min","1");ip34.setAttribute("max","9");
+        var td35=document.createElement("td");
+        var ip35=document.createElement("input");ip35.setAttribute("type","text");ip35.setAttribute("id","c35");ip35.setAttribute("min","1");ip35.setAttribute("max","9");
+        var td36=document.createElement("td");
+        var ip36=document.createElement("input");ip36.setAttribute("type","number");ip36.setAttribute("id","c36");ip36.setAttribute("min","1");ip36.setAttribute("max","9");
+        var td37=document.createElement("td");
+        var ip37=document.createElement("input");ip37.setAttribute("type","number");ip37.setAttribute("id","c37");ip37.setAttribute("min","1");ip37.setAttribute("max","9");
+        var td38=document.createElement("td")
+        var ip38=document.createElement("input");ip38.setAttribute("type","number");ip38.setAttribute("id","c38");ip38.setAttribute("value","6");ip38.setAttribute("disabled","on");
+        var td39=document.createElement("td");
+        var ip39=document.createElement("input");ip39.setAttribute("type","number");ip39.setAttribute("id","c39");ip39.setAttribute("min","1");ip19.setAttribute("max","9");
+
+        var tr4=document.createElement("tr");
+        var td41=document.createElement("td");
+        var ip41=document.createElement("input");ip41.setAttribute("type","text");ip41.setAttribute("id","c41");ip41.setAttribute("value","8");ip41.setAttribute("disabled","on");
+        var td42=document.createElement("td");
+        var ip42=document.createElement("input");ip42.setAttribute("type","text");ip42.setAttribute("id","c42");ip42.setAttribute("min","1");ip42.setAttribute("max","9");
+        var td43=document.createElement("td");
+        var ip43=document.createElement("input");ip43.setAttribute("type","number");ip43.setAttribute("id","c43");ip43.setAttribute("min","1");ip43.setAttribute("max","9");
+        var td44=document.createElement("td");
+        var ip44=document.createElement("input");ip44.setAttribute("type","number");ip44.setAttribute("id","c44");ip44.setAttribute("min","1");ip44.setAttribute("max","9");
+        var td45=document.createElement("td");
+        var ip45=document.createElement("input");ip45.setAttribute("type","text");ip45.setAttribute("id","c45");ip45.setAttribute("value","6");ip45.setAttribute("disabled","on");
+        var td46=document.createElement("td");
+        var ip46=document.createElement("input");ip46.setAttribute("type","number");ip46.setAttribute("id","c46");ip46.setAttribute("min","1");ip46.setAttribute("max","9");
+        var td47=document.createElement("td");
+        var ip47=document.createElement("input");ip47.setAttribute("type","number");ip47.setAttribute("id","c47");ip47.setAttribute("min","1");ip47.setAttribute("max","9");
+        var td48=document.createElement("td");
+        var ip48=document.createElement("input");ip48.setAttribute("type","number");ip48.setAttribute("id","c48");ip48.setAttribute("min","1");ip48.setAttribute("max","9");
+        var td49=document.createElement("td");
+        var ip49=document.createElement("input");ip49.setAttribute("type","number");ip49.setAttribute("id","c49");ip49.setAttribute("value","3");ip49.setAttribute("disabled","on");
+
+        var tr5=document.createElement("tr");
+        var td51=document.createElement("td");
+        var ip51=document.createElement("input");ip51.setAttribute("type","text");ip51.setAttribute("id","c51");ip51.setAttribute("value","4");ip51.setAttribute("disabled","on");
+        var td52=document.createElement("td");
+        var ip52=document.createElement("input");ip52.setAttribute("type","text");ip52.setAttribute("id","c52");ip52.setAttribute("min","1");ip52.setAttribute("max","9");
+        var td53=document.createElement("td");
+        var ip53=document.createElement("input");ip53.setAttribute("type","number");ip53.setAttribute("id","c53");ip53.setAttribute("min","1");ip53.setAttribute("max","9");
+        var td54=document.createElement("td");
+        var ip54=document.createElement("input");ip54.setAttribute("type","number");ip54.setAttribute("id","c54");ip54.setAttribute("value","8");ip54.setAttribute("disabled","on");
+        var td55=document.createElement("td");
+        var ip55=document.createElement("input");ip55.setAttribute("type","text");ip55.setAttribute("id","c55");ip55.setAttribute("min","1");ip55.setAttribute("max","9");
+        var td56=document.createElement("td");
+        var ip56=document.createElement("input");ip56.setAttribute("type","number");ip56.setAttribute("id","c56");ip56.setAttribute("value","3");ip56.setAttribute("disabled","on");
+        var td57=document.createElement("td");
+        var ip57=document.createElement("input");ip57.setAttribute("type","number");ip57.setAttribute("id","c57");ip57.setAttribute("min","1");ip57.setAttribute("max","9");
+        var td58=document.createElement("td");
+        var ip58=document.createElement("input");ip58.setAttribute("type","number");ip58.setAttribute("id","c58");ip58.setAttribute("min","1");ip58.setAttribute("max","9");
+        var td59=document.createElement("td");
+        var ip59=document.createElement("input");ip59.setAttribute("type","number");ip59.setAttribute("id","c59");ip59.setAttribute("value","1");ip59.setAttribute("disabled","on");
+
+        var tr6=document.createElement("tr");
+        var td61=document.createElement("td");
+        var ip61=document.createElement("input");ip61.setAttribute("type","text");ip61.setAttribute("id","c61");ip61.setAttribute("value","7");ip61.setAttribute("disabled","on");
+        var td62=document.createElement("td");
+        var ip62=document.createElement("input");ip62.setAttribute("type","text");ip62.setAttribute("id","c62");ip62.setAttribute("min","1");ip62.setAttribute("max","9");
+        var td63=document.createElement("td");
+        var ip63=document.createElement("input");ip63.setAttribute("type","number");ip63.setAttribute("id","c63");ip63.setAttribute("min","1");ip63.setAttribute("max","9");
+        var td64=document.createElement("td");
+        var ip64=document.createElement("input");ip64.setAttribute("type","number");ip64.setAttribute("id","c64");ip64.setAttribute("min","1");ip64.setAttribute("max","9");
+        var td65=document.createElement("td");
+        var ip65=document.createElement("input");ip65.setAttribute("type","text");ip65.setAttribute("id","c65");ip65.setAttribute("value","2");ip65.setAttribute("disabled","on");
+        var td66=document.createElement("td");
+        var ip66=document.createElement("input");ip66.setAttribute("type","number");ip66.setAttribute("id","c66");ip66.setAttribute("min","1");ip66.setAttribute("max","9");
+        var td67=document.createElement("td");
+        var ip67=document.createElement("input");ip67.setAttribute("type","number");ip67.setAttribute("id","c67");ip67.setAttribute("min","1");ip67.setAttribute("max","9");
+        var td68=document.createElement("td")
+        var ip68=document.createElement("input");ip68.setAttribute("type","number");ip68.setAttribute("id","c68");ip68.setAttribute("min","1");ip68.setAttribute("max","9");
+        var td69=document.createElement("td");
+        var ip69=document.createElement("input");ip69.setAttribute("type","number");ip69.setAttribute("id","c69");ip69.setAttribute("value","6");ip69.setAttribute("disabled","on");
+
+        var tr7=document.createElement("tr");
+        var td71=document.createElement("td");
+        var ip71=document.createElement("input");ip71.setAttribute("type","text");ip71.setAttribute("id","c71");ip71.setAttribute("min","1");ip71.setAttribute("max","9");
+        var td72=document.createElement("td");
+        var ip72=document.createElement("input");ip72.setAttribute("type","text");ip72.setAttribute("id","c72");ip72.setAttribute("value","6");ip72.setAttribute("disabled","on");
+        var td73=document.createElement("td");
+        var ip73=document.createElement("input");ip73.setAttribute("type","number");ip73.setAttribute("id","c73");ip73.setAttribute("min","1");ip73.setAttribute("max","9");
+        var td74=document.createElement("td");
+        var ip74=document.createElement("input");ip74.setAttribute("type","number");ip74.setAttribute("id","c74");ip74.setAttribute("min","1");ip74.setAttribute("max","9");
+        var td75=document.createElement("td");
+        var ip75=document.createElement("input");ip75.setAttribute("type","text");ip75.setAttribute("id","c75");ip75.setAttribute("min","1");ip75.setAttribute("max","9");
+        var td76=document.createElement("td");
+        var ip76=document.createElement("input");ip76.setAttribute("type","number");ip76.setAttribute("id","c76");ip76.setAttribute("min","1");ip76.setAttribute("max","9");
+        var td77=document.createElement("td");
+        var ip77=document.createElement("input");ip77.setAttribute("type","number");ip77.setAttribute("id","c77");ip77.setAttribute("value","2");ip77.setAttribute("disabled","on");
+        var td78=document.createElement("td")
+        var ip78=document.createElement("input");ip78.setAttribute("type","number");ip78.setAttribute("id","c78");ip78.setAttribute("value","8");ip78.setAttribute("disabled","on");
+        var td79=document.createElement("td");
+        var ip79=document.createElement("input");ip79.setAttribute("type","number");ip79.setAttribute("id","c79");ip79.setAttribute("min","1");ip79.setAttribute("max","9");
+
+        var tr8=document.createElement("tr");
+        var td81=document.createElement("td");
+        var ip81=document.createElement("input");ip81.setAttribute("type","text");ip81.setAttribute("id","c81");ip81.setAttribute("min","1");ip81.setAttribute("max","9");
+        var td82=document.createElement("td");
+        var ip82=document.createElement("input");ip82.setAttribute("type","text");ip82.setAttribute("id","c82");ip82.setAttribute("min","1");ip82.setAttribute("max","9");
+        var td83=document.createElement("td");
+        var ip83=document.createElement("input");ip83.setAttribute("type","number");ip83.setAttribute("id","c83");ip83.setAttribute("min","1");ip83.setAttribute("max","9");
+        var td84=document.createElement("td");
+        var ip84=document.createElement("input");ip84.setAttribute("type","number");ip84.setAttribute("id","c84");ip84.setAttribute("value","4");ip84.setAttribute("disabled","on");
+        var td85=document.createElement("td");
+        var ip85=document.createElement("input");ip85.setAttribute("type","text");ip85.setAttribute("id","c85");ip85.setAttribute("value","1");ip85.setAttribute("disabled","on");
+        var td86=document.createElement("td");
+        var ip86=document.createElement("input");ip86.setAttribute("type","number");ip86.setAttribute("id","c86");ip86.setAttribute("value","9");ip86.setAttribute("disabled","on");
+        var td87=document.createElement("td");
+        var ip87=document.createElement("input");ip87.setAttribute("type","number");ip87.setAttribute("id","c87");ip87.setAttribute("min","1");ip87.setAttribute("max","9");
+        var td88=document.createElement("td");
+        var ip88=document.createElement("input");ip88.setAttribute("type","number");ip88.setAttribute("id","c88");ip88.setAttribute("min","1");ip88.setAttribute("max","9");
+        var td89=document.createElement("td");
+        var ip89=document.createElement("input");ip89.setAttribute("type","number");ip89.setAttribute("id","c89");ip89.setAttribute("value","5");ip89.setAttribute("disabled","on");
+
+        var tr9=document.createElement("tr");
+        var td91=document.createElement("td");
+        var ip91=document.createElement("input");ip21.setAttribute("type","text");ip21.setAttribute("id","c21");ip21.setAttribute("min","1");ip91.setAttribute("max","9");
+        var td92=document.createElement("td");
+        var ip92=document.createElement("input");ip92.setAttribute("type","text");ip92.setAttribute("id","c92");ip92.setAttribute("min","1");ip92.setAttribute("max","9");
+        var td93=document.createElement("td");
+        var ip93=document.createElement("input");ip93.setAttribute("type","number");ip93.setAttribute("id","c93");ip93.setAttribute("min","1");ip93.setAttribute("max","9");
+        var td94=document.createElement("td");
+        var ip94=document.createElement("input");ip94.setAttribute("type","number");ip94.setAttribute("id","c94");ip94.setAttribute("min","1");ip94.setAttribute("max","9");
+        var td95=document.createElement("td");
+        var ip95=document.createElement("input");ip95.setAttribute("type","text");ip95.setAttribute("id","c95");ip95.setAttribute("value","8");ip95.setAttribute("disabled","on");
+        var td96=document.createElement("td");
+        var ip96=document.createElement("input");ip96.setAttribute("type","number");ip96.setAttribute("id","c96");ip96.setAttribute("min","1");ip96.setAttribute("max","9");
+        var td97=document.createElement("td");
+        var ip97=document.createElement("input");ip97.setAttribute("type","number");ip97.setAttribute("id","c97");ip97.setAttribute("min","1");ip97.setAttribute("max","9");
+        var td98=document.createElement("td");
+        var ip98=document.createElement("input");ip98.setAttribute("type","number");ip98.setAttribute("id","c98");ip98.setAttribute("value","7");ip98.setAttribute("disabled","on");
+        var td99=document.createElement("td");
+        var ip99=document.createElement("input");ip99.setAttribute("type","number");ip99.setAttribute("id","c99");ip99.setAttribute("value","9");ip99.setAttribute("disabled","on");
+
+        var br1=document.createElement("br");
+
+        div1.appendChild(h1);
+        div1.appendChild(div2);
+        div2.appendChild(h3);
+        div2.appendChild(table);
+        table.appendChild(tbody);
+
+        tbody.appendChild(tr1);
+        tbody.appendChild(tr2);
+        tbody.appendChild(tr3);
+        tbody.appendChild(tr4);
+        tbody.appendChild(tr5);
+        tbody.appendChild(tr6);
+        tbody.appendChild(tr7);
+        tbody.appendChild(tr8);
+        tbody.appendChild(tr9);
+
+        tr1.appendChild(td11);
+        td11.appendChild(ip11);
+        tr1.appendChild(td12);
+        td12.appendChild(ip12);
+        tr1.appendChild(td13);
+        td13.appendChild(ip13);
+        tr1.appendChild(td14);
+        td14.appendChild(ip14);
+        tr1.appendChild(td15);
+        td15.appendChild(ip15);
+        tr1.appendChild(td16);
+        td16.appendChild(ip16);
+        tr1.appendChild(td17);
+        td17.appendChild(ip17);
+        tr1.appendChild(td18);
+        td18.appendChild(ip18);
+        tr1.appendChild(td19);
+        td19.appendChild(ip19);
+
+        tr2.appendChild(td21);
+        td21.appendChild(ip21);
+        tr2.appendChild(td22);
+        td22.appendChild(ip22);
+        tr2.appendChild(td23);
+        td23.appendChild(ip23);
+        tr2.appendChild(td24);
+        td24.appendChild(ip24);
+        tr2.appendChild(td25);
+        td25.appendChild(ip25);
+        tr2.appendChild(td26);
+        td26.appendChild(ip26);
+        tr2.appendChild(td27);
+        td27.appendChild(ip27);
+        tr2.appendChild(td28);
+        td28.appendChild(ip28);
+        tr2.appendChild(td29);
+        td29.appendChild(ip29);
+
+        tr3.appendChild(td31);
+        td31.appendChild(ip31);
+        tr3.appendChild(td32);
+        td32.appendChild(ip32);
+        tr3.appendChild(td33);
+        td33.appendChild(ip33);
+        tr3.appendChild(td34);
+        td34.appendChild(ip34);
+        tr3.appendChild(td35);
+        td35.appendChild(ip35);
+        tr3.appendChild(td36);
+        td36.appendChild(ip36);
+        tr3.appendChild(td37);
+        td37.appendChild(ip37);
+        tr3.appendChild(td38);
+        td38.appendChild(ip38);
+        tr3.appendChild(td39);
+        td39.appendChild(ip39);
+
+        tr4.appendChild(td41);
+        td41.appendChild(ip41);
+        tr4.appendChild(td42);
+        td42.appendChild(ip42);
+        tr4.appendChild(td43);
+        td43.appendChild(ip43);
+        tr4.appendChild(td44);
+        td44.appendChild(ip44);
+        tr4.appendChild(td45);
+        td45.appendChild(ip45);
+        tr4.appendChild(td46);
+        td46.appendChild(ip46);
+        tr4.appendChild(td47);
+        td47.appendChild(ip47);
+        tr4.appendChild(td48);
+        td48.appendChild(ip48);
+        tr4.appendChild(td49);
+        td49.appendChild(ip49);
+
+        tr5.appendChild(td51);
+        td51.appendChild(ip51);
+        tr5.appendChild(td52);
+        td52.appendChild(ip52);
+        tr5.appendChild(td53);
+        td53.appendChild(ip53);
+        tr5.appendChild(td54);
+        td54.appendChild(ip54);
+        tr5.appendChild(td55);
+        td55.appendChild(ip55);
+        tr5.appendChild(td56);
+        td56.appendChild(ip56);
+        tr5.appendChild(td57);
+        td57.appendChild(ip57);
+        tr5.appendChild(td58);
+        td58.appendChild(ip58);
+        tr5.appendChild(td59);
+        td59.appendChild(ip59);
+
+        tr6.appendChild(td61);
+        td61.appendChild(ip61);
+        tr6.appendChild(td62);
+        td62.appendChild(ip62);
+        tr6.appendChild(td63);
+        td63.appendChild(ip63);
+        tr6.appendChild(td64);
+        td64.appendChild(ip64);
+        tr6.appendChild(td65);
+        td65.appendChild(ip65);
+        tr6.appendChild(td66);
+        td66.appendChild(ip66);
+        tr6.appendChild(td67);
+        td67.appendChild(ip67);
+        tr6.appendChild(td68);
+        td68.appendChild(ip68);
+        tr6.appendChild(td69);
+        td69.appendChild(ip69);
+
+        tr7.appendChild(td71);
+        td71.appendChild(ip71);
+        tr7.appendChild(td72);
+        td72.appendChild(ip72);
+        tr7.appendChild(td73);
+        td73.appendChild(ip73);
+        tr7.appendChild(td74);
+        td74.appendChild(ip74);
+        tr7.appendChild(td75);
+        td75.appendChild(ip75);
+        tr7.appendChild(td76);
+        td76.appendChild(ip76);
+        tr7.appendChild(td77);
+        td77.appendChild(ip77);
+        tr7.appendChild(td78);
+        td78.appendChild(ip78);
+        tr7.appendChild(td79);
+        td79.appendChild(ip79);
+
+        tr8.appendChild(td81);
+        td81.appendChild(ip81);
+        tr8.appendChild(td82);
+        td82.appendChild(ip82);
+        tr8.appendChild(td83);
+        td83.appendChild(ip83);
+        tr8.appendChild(td84);
+        td84.appendChild(ip84);
+        tr8.appendChild(td85);
+        td85.appendChild(ip85);
+        tr8.appendChild(td86);
+        td86.appendChild(ip86);
+        tr8.appendChild(td87);
+        td87.appendChild(ip87);
+        tr8.appendChild(td88);
+        td88.appendChild(ip88);
+        tr8.appendChild(td89);
+        td89.appendChild(ip89);
+
+        tr9.appendChild(td91);
+        td91.appendChild(ip91);
+        tr9.appendChild(td92);
+        td92.appendChild(ip92);
+        tr9.appendChild(td93);
+        td93.appendChild(ip93);
+        tr9.appendChild(td94);
+        td94.appendChild(ip94);
+        tr9.appendChild(td95);
+        td95.appendChild(ip95);
+        tr9.appendChild(td96);
+        td96.appendChild(ip96);
+        tr9.appendChild(td97);
+        td97.appendChild(ip97);
+        tr9.appendChild(td98);
+        td98.appendChild(ip98);
+        tr9.appendChild(td99);
+        td99.appendChild(ip99);
+        }
+        var br1=document.createElement("br");
+        div2.appendChild(br1);
+
+        var btn=document.createElement("button");btn.setAttribute("type","button");btn.setAttribute("onclick","startTimer()");btn.innerText="START";
+        btn.setAttribute("id","btn");
+        var br2=document.createElement("br");var br3=document.createElement("br");
+        var rst=document.createElement("button");rst.setAttribute("type","button");rst.setAttribute("onclick","rset()");rst.innerText="RESET";
+        rst.setAttribute("id","rst");
+
+        div2.appendChild(btn);
+        div2.appendChild(br2);//div2.appendChild(br3);
+        div2.appendChild(rst);
+
+        document.body.append(div1);
+        
+        var timer,duration=60*4,minutes,seconds;
+        timer=duration;
+        var display = document.getElementById('timer');
+
+        /*window.onload = function () {
+        //function timer(){
+            //var fourMinutes = 60 * 4;
+            //display = document.querySelector('#time');
+            //startTimer(fourMinutes, display);
+        };*/
+
+        function startTimer() {   
+        //document.querySelector("btn").disabled=true; 
+        //var timer = duration, minutes, seconds;
+        setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.innerText = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+        }
+        }, 1000);
+        }  
+
+        window.onload=rset();
+        function rset(){
+            clearInterval(startTimer);
+            timer=duration;
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+            display.innerText = minutes + ":" + seconds;
+            //document.querySelector("btn").disabled=false;
+            check();
+        }
+
+        function check(){
+            var data=document.querySelectorAll("td");
+            console.log(data);
+            data.forEach(function (item){
+                console.log(item.value);    
+            });
+        }
+        
+    </script>
+
+    <!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
